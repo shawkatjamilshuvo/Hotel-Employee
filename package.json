@@ -1,0 +1,22 @@
+{
+  "name": "hotelemployee",
+  "version": "1.0.0",
+  "description": "Hotel Employee",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ClassicSignum/travelia.git"
+  },
+  "keywords": [
+    "traveller"
+  ],
+  "author": "Shuvo",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ClassicSignum/travelia/issues"
+  },
+  "homepage": "https://github.com/ClassicSignum/travelia#readme"
+}

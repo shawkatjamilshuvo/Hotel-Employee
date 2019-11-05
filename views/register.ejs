@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Register Page</title>
+    <link rel="stylesheet" href="styling/register_style.css">
+</head>
+<body>
+    <div class="wrapper"> 
+    <fieldset>
+        <legend>Submit your Information</legend>
+        <form method="POST" action="/register">
+            Name:<input type="text" placeholder="Type your name" name="name" value="<%=qs.name%>" required><br>
+            Email:<input type="email" placeholder="Type your email" name="email" value="<%=qs.email%>" required><br>
+            Username:<input type="text" placeholder="Type your Username" name="username" value="<%=qs.username%>" required><br>
+            Password:<input type="password" placeholder="Type your password" name="password" value="<%=qs.password%>" required><br>
+            Hotel Name:<input type="text" placeholder="Type your Hotel Name" name="hname" value="<%=qs.hname%>" required><br>
+            Hotel Address:<input type="text" placeholder="Type your Hotel Address" name="address" value="<%=qs.address%>" required><br>
+            Phone: <input type="number" placeholder="Type your Phone Number" name="phone" value="<%=qs.phone%>" required><br>
+            Bank Name: <select name="BankName" id="">
+                <option value="Standard Bank">Standard Bank</option>
+                <option value="Dutch-Bangla Bank">Dutch-Bangla Bank</option>
+                <option value="Janata Bank">Janata Bank</option>
+                <option value="Prime Bank Limited">Prime Bank Limited</option>
+                <option value="Standard Chartered Bank">Standard Chartered Bank</option>
+            </select> <br> 
+            Account Number: <input type="text" placeholder="Type your Account Number" name="ACnum" value="<%=qs.ACnum%>" required><br>
+            <input type="submit" name="submit">
+        </form>
+    </fieldset>
+    <br>
+    <a href="/all">show</a>
+    </div>
+</body>
+</html>

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>All</title>
+</head>
+<body>
+    <h1>Details</h1>
+    <table border="1">
+		<tr>
+			<td>ID</td>
+			<td>USERNAME</td>
+			<td>PASSWORD</td>
+            <td>ACTION</td>
+            <td>ID</td>
+			<td>USERNAME</td>
+			<td>PASSWORD</td>
+            <td>ACTION</td>
+            <td>ACTION</td>
+		</tr>
+
+	<% for(var i=0; i < item.length; i++){ %>
+
+		<tr>
+			<td><%= item[i].name %></td>
+			<td><%= item[i].email %></td>
+            <td><%= item[i].username %></td>
+            <td><%= item[i].password %></td>
+			<td><%= item[i].hname %></td>
+            <td><%= item[i].address %></td>
+            <td><%= item[i].phone%></td>
+			<td><%= item[i].BankName %></td>
+			<td><%= item[i].ACnum %></td>
+		</tr>
+	<% } %>
+
+	</table>
+</body>
+</html>

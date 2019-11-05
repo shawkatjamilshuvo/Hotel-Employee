@@ -1,0 +1,13 @@
+.wrapper
+{
+    width: 100%;
+    height: 1000px;
+    margin: 0 auto;
+    background-color: rgb(104, 184, 184);
+}
+h1
+{
+    text-align: center;
+    color: rgb(85, 29, 29);
+    
+}
