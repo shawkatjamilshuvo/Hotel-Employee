@@ -61,10 +61,19 @@ var connection = mysql.createConnection({
   
 obj.get('/all',(req,res)=>{
     var sql="select * from hotel_employee";
-    connection.query(sql,function(err,results){
+    connection.query(sql,function(err,rows){
         if(err) throw err;
-        console.log(results);
-        res.render('all',{item:results});
+        console.log(rows);
+        res.render('all',{item:rows});
+    })
+})
+
+obj.get('/show',(req,res)=>{
+    var sql="select * from  hotels";
+    connection.query(sql,function(err,rows){
+        if(err) throw err;
+        console.log(rows);
+        res.render('showOffers',{item:rows});
     })
 })
 
